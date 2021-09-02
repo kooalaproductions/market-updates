@@ -12,11 +12,14 @@ inputBox.onkeyup = (e)=>{
     let emptyArray = [];
     
     if(userData){
+
         icon.onclick = ()=>{
             webLink = `https://www.google.com/search?q=${userData}`;
             linkTag.setAttribute("href", webLink);
             linkTag.click();
         }
+
+        
         
         emptyArray = suggestions.filter((data)=>{
             //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
@@ -33,6 +36,15 @@ inputBox.onkeyup = (e)=>{
             //adding onclick attribute in all li tag
             allList[i].setAttribute("onclick", "select(this)");
         }
+
+        if (e.keyCode === 13) {
+
+            webLink = `https://www.google.com/search?q=${userData}`;
+            linkTag.setAttribute("href", webLink);
+            linkTag.click();
+            
+          }
+
     }else{
         searchWrapper.classList.remove("active"); //hide autocomplete box
     }
