@@ -1,4 +1,9 @@
+
+
+
+
 let suggestions = [
+    "Apple",
     "AMC",
     "GameStop",
     "Dogecoin",
