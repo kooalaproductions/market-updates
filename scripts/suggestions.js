@@ -1,15 +1,27 @@
 
+// let nameofStock = [];
+// let promises = [];
 
-let test =  tSymbol();//passes jsondata but pending promise
-
-test.then(function(result) {//promise is made
-    console.log(result + 'ch')
-    return result.promise;
- })
+// let test =  tSymbol();//passes jsondata but pending promise
 
 
+//     let thenTest = test.then((value) => {//promise is made
+//         console.log(value + ' --PRINTS CORRECT TICKER SYMBOL--')
+//         nameofStock.push(value[0]);
+        
+//     })
+//     .catch(e => console.error(e));
+ 
+//  promises.push(thenTest);
 
-let suggestions = [
+
+//  Promise.all(promises).finally(() => {
+//      console.log("nameofStock[0]", nameofStock[0]);
+//  })
+
+
+
+ let suggestions = [
     "Apple ",
     "AMC",
     "GameStop",
@@ -17,3 +29,12 @@ let suggestions = [
     "Tesla",
     "Amazon",
 ];
+ 
+// let suggestions = [
+//     "Apple ",
+//     "AMC",
+//     "GameStop",
+//     "Dogecoin",
+//     "Tesla",
+//     "Amazon",
+// ];
