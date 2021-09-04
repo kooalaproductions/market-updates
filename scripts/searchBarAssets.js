@@ -50,7 +50,7 @@ inputBox.onkeyup = (e)=>{
     }
 }
 
-function select(element){
+function select(element){//allows to click on the autocomplete suggestions
     let selectData = element.textContent;
     inputBox.value = selectData;
     icon.onclick = ()=>{
